@@ -1,0 +1,14 @@
+{
+  "name": "keitech-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss keitech/static/css/style.css -w"
+  },
+  "author": "keita",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

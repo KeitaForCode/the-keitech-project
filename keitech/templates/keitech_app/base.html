@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>KeiTech || Established for innovation</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}" />
+    <link rel="stylesheet" href="{% static "css/icon-font.css" %}">
+    <script type="text/javascript" src="https://kit.fontawesome.com/f25ab638b9.js" crossorigin='anonymous'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
+
+    </script>
+  </head>
+  <body>
+    <!-- nav section-->
+    <nav class="navbar">
+      <a href="#" class="navbar__logo"><img src="" class="navbar__logo"><strong>KeiTech</strong></a>
+      <input type="checkbox" class="navbar__menu--btn" id="navbar__menu--btn">
+      <label for="navbar__menu--btn" class="navbar__menu--icon">
+        <span class="navbar__menu--icon-line"></span>
+      </label>
+      <div class="navbar__bars">
+        <!--<i class="fas fa-bars navbar__menu--btn2"></i>-->
+      </div>
+      <div class="navbar__menu">
+        <ul class="navbar__nav-links">
+
+
+        <li nav-link><a href="{% url 'index' %}" class="navbar__menu--links">Home</a></li>
+        <li nav-link><a href="{% url 'keitech_app:services' %}" class="navbar__menu--links">Services</a></li>
+        <li nav-link><a href="#" class="navbar__menu--links">Projects</a></li>
+        <li nav-link><a href="{% url 'keitech_app:about' %}" class="navbar__menu--links">About us</a></li>
+        <li nav-link><a href="#" class="navbar__menu--links">Team</a></li>
+        <li nav-link><a href="{% url 'keitech_app:contacts' %}" class="navbar__menu--links">Contacts</a></li>
+        <li nav-link><a href="{% url 'keitech_app:qa' %}" class="navbar__menu--links">Q&A</a></li>
+        <li nav-link><a href="{% url 'keitech_app:contacts' %}" class="navbar__menu--links">Profile</a></li>
+        <li nav-link><a href="#" class="navbar__menu--links member">Join us</a></li>
+
+        </ul>
+      </div>
+    </nav>
+    {% block body_block %}
+
+    {% endblock %}
+  </body>
+</html>

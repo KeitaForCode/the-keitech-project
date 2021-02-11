@@ -1,0 +1,126 @@
+.feature-box {
+    background-color: rgba($color-black,.8);
+    color: $color-white;
+    font-size: 1.5rem;
+    padding: 5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-white, .15);
+    transition: transform .3s;
+
+
+    &__icon {
+
+        font-size: 6rem;
+        margin-bottom: .5rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $color-white, $color-primary-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &:hover{
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+}
+
+.feature-box-2 {
+  background-color: rgba($color-black,.8);
+  color: $color-white;
+  font-size: 1.5rem;
+  padding: 5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .9);
+  transition: transform .3s;
+
+
+  &__icon {
+
+      font-size: 6rem;
+      margin-bottom: .5rem;
+      display: inline-block;
+      background-image: linear-gradient(to right, $color-white, $color-primary-dark);
+      -webkit-background-clip: text;
+      color: transparent;
+  }
+
+  &:hover{
+      transform: translateY(-1.5rem) scale(1.03);
+  }
+}
+
+.feature-box-3 {
+  background-color: rgba($color-lime,.8);
+  color: $color-white;
+  font-size: 1.5rem;
+  padding: 5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 9);
+  transition: transform .3s;
+  margin-top: -30rem;
+
+
+  &__icon {
+
+      font-size: 6rem;
+      margin-bottom: .5rem;
+      display: inline-block;
+      background-image: linear-gradient(to right, $color-white, $color-white);
+      -webkit-background-clip: text;
+      color: transparent;
+  }
+
+  &:hover{
+      transform: translateY(-1.5rem) scale(1.03);
+  }
+}
+
+.women-box-1 {
+  background-image: linear-gradient(
+  to right bottom,
+  rgba($color-black, 0.5),
+  rgba($color-black, 0.5)),
+  url("/static/img/women1.jpg");
+  background-size: cover;
+  color: $color-white;
+  font-size: 1.5rem;
+  padding: 10rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .9);
+  transition: transform .3s;
+}
+
+.women-box-2 {
+  background-image: linear-gradient(
+  to right bottom,
+  rgba($color-black, 0.5),
+  rgba($color-black, 0.5)),
+  url("/static/img/child1.jpg");
+  background-size: cover;
+  color: $color-white;
+  font-size: 1.5rem;
+  padding: 10rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .9);
+  transition: transform .3s;
+}
+
+.women-box-3 {
+  background-image: linear-gradient(
+  to right bottom,
+  rgba($color-black, 0.5),
+  rgba($color-black, 0.5)),
+  url("/static/img/women3.jpg");
+  background-size: cover;
+  color: $color-white;
+  font-size: 1.5rem;
+  padding: 10rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .9);
+  transition: transform .3s;
+}

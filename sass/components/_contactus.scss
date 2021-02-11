@@ -1,0 +1,65 @@
+.contact-hero {
+  height: 60vh;
+  background-image: linear-gradient(
+  to right bottom,
+  rgba($color-black, 0.9),
+  rgba($color-black, 0.9)),
+  url("/static/img/contactimg2.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  box-shadow: 0 2rem 2rem rgba($color-black, .4);
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+.section-contact {
+  background-color: $color-gray;
+  padding: 25rem 0;
+  margin-top: -10vh;
+  margin-bottom: -34rem;
+}
+
+.contact-icon {
+  display: inline-grid;
+
+}
+
+.style-paragraph {
+  font-size: 18px;
+}
+
+
+.icon-style {
+  font-size: 2rem;
+}
+
+.fa-phone {
+  color: blue;
+  margin-top: 50px;
+  font-size: 3rem;
+}
+
+.fa-at {
+  color: $color-lime;
+  margin-top: 50px;
+  font-size: 3rem;
+}
+
+.fa-globe {
+  color: $color-dark-green;
+  margin-top: 50px;
+  font-size: 3rem;
+}
+
+.fa-map-marker {
+  color: $color-dark-blue;
+  margin-top: 50px;
+  font-size: 3rem;
+}

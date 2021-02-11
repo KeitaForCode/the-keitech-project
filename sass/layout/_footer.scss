@@ -1,0 +1,49 @@
+.footer-info {
+  display: grid;
+}
+
+.footer-links {
+  list-style: none;
+  color: $color-white;
+  text-decoration: none;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.fab {
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.fa-facebook-square {
+  color: $color-blue;
+  font-size: 30px;
+}
+
+.fa-twitter-square {
+  font-size: 30px;
+  color: #00BFFF;
+}
+
+.fa-instagram-square {
+  font-size: 30px;
+  background: linear-gradient(45DEG, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.fa-linkedin-in {
+  font-size: 30px;
+  color: #00BFFF;
+}
+
+.footer-paragraph {
+  color: $color-white;
+}
+
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
