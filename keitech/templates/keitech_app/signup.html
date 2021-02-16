@@ -1,0 +1,23 @@
+{% extends 'keitech_app/base.html' %}
+{% block body_block %}
+
+<div class="">
+
+  {% if registered %}
+  <h1>Thank you for registering with us</h1>
+  {% else %}
+
+  <div class="signup-section">
+  <h1 class="form-heading">Join KeiTech</h1>
+
+
+  <form class="signup-form" enctype="multipart/form-data" method="POST">
+    {% csrf_token %}
+    {{ signup_form}}
+    <input class="member-join" type="Submit" name="" value="JOIN NOW">
+  </form>
+ {% endif %}
+</div>
+</div>
+
+{% endblock %}

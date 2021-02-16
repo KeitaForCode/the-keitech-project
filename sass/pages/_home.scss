@@ -58,6 +58,20 @@
   position: relative;
 }
 
+.section_footer-membership {
+  background-color: $color-black;
+  padding: 10rem;
+  margin-top: 33rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-black,0.95),
+      rgba($color-black,0.95)) ,
+      url("/static/img/img1.jpg");
+  background-size: cover;
+  box-shadow: 0 2rem 2rem rgba($color-black, .9);
+  position: relative;
+}
+
 .section_footer-service {
   background-color: $color-black;
   padding: 10rem;

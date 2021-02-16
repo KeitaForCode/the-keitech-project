@@ -1,0 +1,51 @@
+.signup-section {
+  height: 100vh;
+  background-color: $color-white;
+  padding: 15rem 0;
+  margin-top: -3vh;
+  margin-bottom: -34rem;
+}
+
+.signup-form{
+  display: grid;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2rem;
+  text-align: left;
+  width: 40%;
+
+
+}
+
+.member-join{
+  background-color: $color-lime;
+  padding: 10px;
+  margin-top: 10px;
+  color: $color-white;
+  border-radius: 4px;
+  font-size: 16px;
+  font-style: oblique;
+  cursor: pointer;
+}
+
+.form-heading {
+  position: relative;
+  margin-top: -3rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.input-style {
+  display: flex;
+  color: #777;
+  border: 2px solid $color-gray;
+  border-radius: 4px;
+  padding: 8px;
+  width: auto;
+  font-size: 18px;
+  background: transparent;
+}

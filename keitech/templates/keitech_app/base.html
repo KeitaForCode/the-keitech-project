@@ -6,12 +6,10 @@
     <title>KeiTech || Established for innovation</title>
     <link rel="stylesheet" href="{% static "css/style.css" %}" />
     <link rel="stylesheet" href="{% static "css/icon-font.css" %}">
-    <script type="text/javascript" src="https://kit.fontawesome.com/f25ab638b9.js" crossorigin='anonymous'>
+    <script type="text/javascript" src="https://kit.fontawesome.com/f25ab638b9.js" crossorigin='anonymous'></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
-
-    </script>
   </head>
   <body>
     <!-- nav section-->
@@ -36,7 +34,7 @@
         <li nav-link><a href="{% url 'keitech_app:contacts' %}" class="navbar__menu--links">Contacts</a></li>
         <li nav-link><a href="{% url 'keitech_app:qa' %}" class="navbar__menu--links">Q&A</a></li>
         <li nav-link><a href="{% url 'keitech_app:contacts' %}" class="navbar__menu--links">Profile</a></li>
-        <li nav-link><a href="#" class="navbar__menu--links member">Join us</a></li>
+        <li nav-link><a href="{% url 'keitech_app:signup' %}" class="navbar__menu--links member">Join us</a></li>
 
         </ul>
       </div>

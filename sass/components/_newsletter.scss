@@ -1,4 +1,4 @@
-.container {
+.container-newsletter {
   background-image: linear-gradient(
       to right bottom,
       rgba($color-black,0.9),
@@ -19,6 +19,7 @@
 }
 
 .email-box {
+  margin-top: 4rem;
   height: 4rem;
   display: flex;
   justify-content: center;
@@ -26,6 +27,7 @@
 
 .email-box i {
   background: $color-lime;
+  //margin-top: 4rem;
   width: 4rem;
   line-height: 4rem;
   border-top-left-radius:  4px;

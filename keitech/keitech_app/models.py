@@ -41,7 +41,9 @@ class SignUp(models.Model):
         (VOLUNTEER, 'Volunteer'),
         (PARTNER, 'Partner'),
     ]
-    user_name = models.CharField(max_length=256)
+    First_Name = models.CharField(max_length=256, null=True)
+    Last_Name = models.CharField(max_length=256, null=True)
+    Nick_Name = models.CharField(max_length=256, null=True)
     email = models.EmailField(unique=True)
     password = models.CharField(max_length=200)
     retype_password = models.CharField(max_length=200)
@@ -54,7 +56,7 @@ class SignUp(models.Model):
 
     def __str__(self):
         """This will return the string representation of the signup model"""
-        return self.user_name
+        return self.First_Name
 
 
 # Question models
