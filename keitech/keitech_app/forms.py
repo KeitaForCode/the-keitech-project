@@ -15,6 +15,7 @@ class SignUpForm(forms.ModelForm):
             'First_Name': forms.TextInput(attrs={'class':'input-style'}),
             'Last_Name': forms.TextInput(attrs={'class':'input-style'}),
             'Nick_Name': forms.TextInput(attrs={'class':'input-style'}),
+            'Phone': forms.NumberInput(attrs={'class':'input-style'}),
             'email': forms.EmailInput(attrs={'class':'input-style'}),
             'applying_as': forms.Select(attrs={'class':'input-style'})
         }

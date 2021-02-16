@@ -44,6 +44,7 @@ class SignUp(models.Model):
     First_Name = models.CharField(max_length=256, null=True)
     Last_Name = models.CharField(max_length=256, null=True)
     Nick_Name = models.CharField(max_length=256, null=True)
+    Phone = models.PositiveIntegerField(null=True)
     email = models.EmailField(unique=True)
     password = models.CharField(max_length=200)
     retype_password = models.CharField(max_length=200)
