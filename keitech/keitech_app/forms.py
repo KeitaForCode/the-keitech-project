@@ -1,7 +1,22 @@
 from django import forms
 from django.forms import ModelForm
 from django.contrib.auth.models import User
-from keitech_app.models import SignUp
+from keitech_app.models import SignUp, Contacts
+
+
+class ContactForm(forms.ModelForm):
+    """This will display the contact form on the contact us page"""
+
+    class Meta:
+        model = Contacts
+        fields = '__all__'
+        widgets = {
+            'name': forms.TextInput(attrs={'class':'contact-form'}),
+            'email': forms.EmailInput(attrs={'class':'contact-form'}),
+            'comments': forms.Textarea(attrs={'class':'contact-form'}),
+        }
+
+
 
 class SignUpForm(forms.ModelForm):
     """This will display the SignUp form on the signup page"""

@@ -680,6 +680,15 @@ body {
   font-size: 18px;
   background: transparent; }
 
+.contact-form {
+  display: flex;
+  color: #777;
+  border: 1px solid #222121;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 17px;
+  background: transparent; }
+
 .section_about {
   background-color: #DCDCDC;
   padding: 25rem 0;

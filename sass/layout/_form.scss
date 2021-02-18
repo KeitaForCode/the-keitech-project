@@ -16,8 +16,6 @@
   font-size: 2rem;
   text-align: left;
   width: 40%;
-
-
 }
 
 .member-join{
@@ -47,5 +45,15 @@
   padding: 8px;
   width: auto;
   font-size: 18px;
+  background: transparent;
+}
+
+.contact-form {
+  display: flex;
+  color: #777;
+  border: 1px solid $color-black;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 17px;
   background: transparent;
 }
