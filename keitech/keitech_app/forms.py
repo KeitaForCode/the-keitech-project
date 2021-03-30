@@ -1,7 +1,7 @@
 from django import forms
 from django.forms import ModelForm
 from django.contrib.auth.models import User
-from keitech_app.models import SignUp, Contacts
+from keitech_app.models import SignUp, Contacts, NewsLetter
 
 
 class ContactForm(forms.ModelForm):
@@ -15,6 +15,19 @@ class ContactForm(forms.ModelForm):
             'email': forms.EmailInput(attrs={'class':'contact-form'}),
             'comments': forms.Textarea(attrs={'class':'contact-form'}),
         }
+
+
+class NewsLetterForm(forms.ModelForm):
+    """this will manage the newsleter form on the homepage"""
+    email = forms.EmailField(widget=forms.EmailInput(attrs={'class':'newsletter-input', 'placeholder':'Enter your email address'}), label='')
+
+    class Meta:
+        model = NewsLetter
+        fields = '__all__'
+        widgets = {
+            'email': forms.EmailInput(attrs={'class':'newsletter-input'}),
+        }
+
 
 
 

@@ -11,7 +11,7 @@ class NewsLetter(models.Model):
 
     def __str__(self):
         """This will return the string representation of the newsletter model"""
-        self.email
+        return self.email
 
 
 #contacts model
@@ -93,6 +93,10 @@ class Comments(models.Model):
     answer = models.ForeignKey(Answer, on_delete=models.CASCADE)
     user_name = models.ForeignKey(SignUp, on_delete=models.CASCADE, related_name='comment_user')
     Added_on = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        """This will return the string representation of the comments models"""
+        return self.user_name
 
 
 #upvote models

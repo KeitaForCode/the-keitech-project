@@ -1,13 +1,24 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
-from keitech_app.forms import SignUpForm, ContactForm
+from keitech_app.forms import SignUpForm, ContactForm, NewsLetterForm
 
 # Create your views here.
 
 
 def index(request):
     """This will display the homepage on the browser"""
-    return render(request, "keitech_app/index.html")
+    if request.method == 'POST':
+        newsletterform = NewsLetterForm(data=request.POST)
+        if newsletterform.is_valid():
+            """this will save the valid newsletter in the database"""
+            newsletter = newsletterform.save()
+        else:
+            print(newsletterform.errors)
+    else:
+        newsletterform = NewsLetterForm()
+    return render(request, "keitech_app/index.html", {'newsletterform':newsletterform})
+
+
 
 class Services(TemplateView):
     """This will display our services page on the browser"""
@@ -50,8 +61,6 @@ def SignUp(request):
         if signup_form.is_valid():
             """This will save the valid signup form in the database"""
             user = signup_form.save()
-            user.set_password(user.password, user.retype_password)
-            user.save()
 
 
             registered = True
